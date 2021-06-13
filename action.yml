@@ -1,0 +1,16 @@
+name: 'Verify File Checksum'
+description: 'This action generates a files checksum, and saves it to file.'
+inputs:
+  filePath:
+    description: 'The URL of the file to check.'
+    required: true
+  saveFile:
+    description: 'Where to save the file.'
+    required: true
+  algorithm:
+    description: 'The algorithm that has been used for calculating the checksum.'
+    required: true
+    default: 'MD5'
+runs:
+  using: 'node12'
+  main: 'index.js'
