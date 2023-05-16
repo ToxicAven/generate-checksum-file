@@ -1,4 +1,4 @@
-name: 'Verify File Checksum'
+name: 'Generate Checksum File'
 description: 'This action generates a files checksum, and saves it to file.'
 inputs:
   filePath:
